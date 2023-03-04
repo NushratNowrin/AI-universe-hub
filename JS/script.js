@@ -247,3 +247,20 @@ const toolDtlsShowInWebsite = (data) => {
  `;
   modalIDSection.appendChild(mAkeModalDiv);
 };
+
+// #sort
+// Date and Show the display
+
+const sortByDate = () => {
+  const cardContainer = document.getElementById("car-section-id");
+  const cards = Array.from(cardContainer.querySelectorAll(".date-Divs-Class"));
+
+  cards.sort((a, b) => {
+    const dateA = new Date(a.querySelector("span").textContent);
+    const dateB = new Date(b.querySelector("span").textContent);
+    // return dateA - dateB;
+    return dateB - dateA;
+  });
+
+  cards.forEach((card) => cardContainer.appendChild(card));
+};
