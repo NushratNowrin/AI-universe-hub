@@ -95,3 +95,11 @@ const lodingTogles = (loding) => {
 };
 loadCartFirst(6);
 
+/* AI Universe Hub-Modal
+ */
+ const toolsDtls = async (id) => {
+  const url = `https://openapi.programming-hero.com/api/ai/tool/${id}`;
+  const res = await fetch(url);
+  const data = await res.json();
+  toolDtlsShowInWebsite(data.data);
+};
