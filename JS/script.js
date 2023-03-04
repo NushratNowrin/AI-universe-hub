@@ -83,3 +83,15 @@ document.getElementById("see-more-btn").addEventListener("click", function () {
   lodingTogles(true);
   seeMore();
 });
+// loding-toggles
+
+const lodingTogles = (loding) => {
+  const LodingSection = document.getElementById("loding-d-none");
+  if (loding) {
+    LodingSection.classList.remove("d-none");
+  } else {
+    LodingSection.classList.add("d-none");
+  }
+};
+loadCartFirst(6);
+
