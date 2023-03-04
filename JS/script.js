@@ -264,3 +264,10 @@ const sortByDate = () => {
 
   cards.forEach((card) => cardContainer.appendChild(card));
 };
+
+// ----------
+const sortByDataBtn = document.getElementById("sortByData-Btn");
+sortByDataBtn.addEventListener("click", function () {
+  sortByDate();
+  lodingTogles(true);
+});
