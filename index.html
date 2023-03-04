@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Universe Hub</title>
+    <title>AI-universe-hub</title>
+    <!-- custom link -->
+    <script src="https://kit.fontawesome.com/2d9366927f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- custom link end -->
 </head>
-<body>
-    
+<body class="container">
+    <!-- AI Universe header-section -->
+    <header>
+        <div class="text-center mt-5">
+            <h1>AI Universe Hub <hr class="w-25 border-2 mx-auto"> </h1>
+        <button  id="sortByData-Btn"  type="button" class="btn btn-danger px-3 p-2 rounded-2 mt-2">Sort By Date</button>
+        </div>
+    </header>
+    <main>
+<!--AI Universe Hub-card-api-section---
+ -->  
+ <section class="mt-5">
+    <div>
+        <div id="car-section-id" class="row row-cols-1 row-cols-md-3 g-4 "> 
+          </div>
+          <!-- ----------------------------------------------Loading... -->
+        <section>
+            <div id="loding-d-none" class="spinner-border mt-2 d-block text-danger mx-auto d-block d-none " role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div> 
+        </section>
+          <!-- -----------------Loading... -->
+          <button id="see-more-btn"
+          type="button" 
+          class="btn btn-danger mx-auto d-block  px-3 p-2 rounded-2 mt-5 mb-5">See More 
+        </button> 
+    </div>
+ </section>
+ <section id="exampleModal-set">
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg  w-100 modal-xl  ">
+      <div class="modal-content ">
+        <div class="modal-header">
+      
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="modal-body" class="modal-body p-5  ">
+          <!--   modal-body- -->
+
+          </div>       
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+    </main>
+    <!-- js -->
+    <!-- bootstrap js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- custom js CDN -->
+    <script src="Javascript/index.js"></script>
+     <!-- js end -->
 </body>
 </html>
