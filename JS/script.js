@@ -71,3 +71,15 @@ const alldisplayAiToolsData = (tools, dataLimit) => {
 
   lodingTogles(false);
 };
+
+/* see-more-btn-section */
+
+const seeMore = (dataLimit) => {
+  loadCartFirst(dataLimit);
+};
+document.getElementById("see-more-btn").addEventListener("click", function () {
+  // loding-on
+
+  lodingTogles(true);
+  seeMore();
+});
